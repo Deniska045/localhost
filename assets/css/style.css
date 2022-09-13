@@ -1,0 +1,293 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+    width:100%;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+}
+.card-img-top{
+    width: 200px;
+    height: 250px;
+}
+
+main{
+    width: 80%;
+    margin-left: 10%;
+}
+header {
+    width: 100%;
+    display: flex;
+    background-color: black;
+    padding: 20px 10px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .wrap-logo {
+    display: flex;
+    align-items: center;
+   
+  }
+  .wrap-logo img{
+      width: 250px;
+      height: 100px;
+  }
+  header a {
+    color: #212121;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    border-radius: 4px;
+  }
+  
+  header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  header a:hover {
+    background-color: #FBC02D;
+    color: #212121;
+  }
+  
+  header a.active {
+    background-color: #FBC02D;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    }
+.font {
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    display: flex;
+    
+}
+
+.info {
+    width: 500px;
+    height: 450px;
+    padding: 10px;
+}
+
+.cnopa {
+    margin-top: 20px;
+}
+.font input{
+    background-color: #FFEB3B;
+}
+.font input :hover {
+    background-color: #FBC02D;
+    color: #212121;
+}
+.font input .active{
+    background-color: #FBC02D;
+}
+
+.reg {
+    border-radius: 20px;
+    width: 300px;
+    height: 450px;
+    padding: 15px;
+    background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+    text-align: center;
+    
+
+}
+
+.reg h2 {
+    margin: 5px;
+    width: -webkit-fill-available;
+    background-color: white;
+    border-radius: 20px;
+}
+
+form input {
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    border: 0;
+    width: -webkit-fill-available;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.voiti {
+    border-radius: 20px;
+    width: 300px;
+    height: 250px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.356);
+    text-align: center;
+    margin-left: 10%;
+    position: absolute;
+}
+
+.create-img {
+    width: 250px;
+    height: 350px;
+    background-color: black;
+    margin-left: 60%;
+
+}
+
+.foto {
+    margin-top: 20px;
+    padding-top: 12px;
+    height: 40px;
+
+}
+
+.ft {
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+
+body {
+ 
+    min-height: 100vh;
+  
+}
+
+.fullPageMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+}
+
+.fullPageMenu.active {
+    top: -100%;
+}
+
+.fullPageMenu .banner {
+   
+    width: 900px;
+    height: 100%;
+}
+
+.fullPageMenu .banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.fullPageMenu .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.fullPageMenu .nav ul {
+    position: relative;
+}
+
+.fullPageMenu .nav ul li {
+    position: relative;
+    list-style: none;
+    padding: 0 20px;
+    margin: 5px 0;
+    overflow: hidden;
+    display: table;
+}
+
+.fullPageMenu .nav ul li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    transition: transform 0.5s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+
+.fullPageMenu .nav ul li:hover:before {
+    transition: transform 0.5s ease-in-out;
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+.fullPageMenu .nav ul li a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+.fullPageMenu .nav ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    color: #fff;
+}
+
+.fullPageMenu .nav ul li:hover a {
+    transform: translateY(-100%);
+    color: fff;
+}
+
+.menuicon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: rgb(255, 0, 0) url(https://i.postimg.cc/k4rb3zpp/pngwave.png);
+    background-size: 40px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    border-radius: 10px;
+}
+
+.menuicon.active {
+    background: rgb(255, 0, 0) url(https://i.postimg.cc/25t1dMY5/pngegg-1.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+@media(max-width:991px) {
+    .banner {
+        display: none;
+    }
+}
